@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>WARP BOOK | Project 1</title>
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Header :3 -->
+    <header id="header">
+        <a href="#" class="logo">NL</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#design" onclick="toggle()">Works</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+
+
+<!-- BANNER :0 -->
+    <section class="banner banner-p2" id="home">
+        <div class = "content mxw800p">
+            <h2>Project 2</h2>
+            <p>Formatting in progress</p>
+        </div>  
+    </section>
+    
+    
+<!--Original Work :0 -->
+    <section class="sec abtclr" id="about">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Adapting</h3>
+                <p>Note: Revise formatting</p>
+                <img src="images/ssWallpaper.jpg" width="200" height=auto>
+                <img src="images/swWallpaper.jpg" width="200" height=auto>
+            </div>
+        </div>  
+    </section>
+ 
+<!-- EXTENSION :0 -->
+    <section class="sec" id="computer">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Extension</h3>
+                <p>Note: Working on making interaction available via this webpage</p>
+                <p>Otherwise -> video of extension will be uploaded</p>
+            </div>
+        </div>  
+    </section>
+    
+<!-- WORKS :0 -->
+    <section class="sec abtclr2" id="design">
+        <div class="content">
+            <div class="mxw800p">
+                <h3 class="wht">Works</h3>
+            </div>
+            <div class="skills">
+                <div class="box">
+                    <div class="iconBx">
+                        <a href="project1.html"><img src="images/flower.png"></a>
+                    </div>
+                    <div class="content">
+                    </div>
+                        <h2>Project 1</h2>
+                </div>
+             <div class="box">
+                    <div class="iconBx">
+                        <a href="project2.html"><img src="images/seesaw.png"></a>
+                    </div>
+                    <div class="content">
+                    </div>
+                        <h2>Project 2</h2>
+                </div>
+             <div class="box">
+                    <div class="iconBx">
+                        <img src="images/sketch.png">
+                    </div>
+                    <div class="content">
+                    </div>
+                        <h2>Sketches</h2>
+                </div>
+             <div class="box">
+                    <div class="iconBx">
+                        <img src="images/poetry.png">
+                    </div>
+                    <div class="content">
+                    </div>
+                        <h2>Poetry</h2>
+                </div>
+                <div class="box">
+                    <div class="iconBx">
+                        <a href="painting.html"><img src="images/painting.png"></a>
+                    </div>
+                    <div class="content">
+                    </div>
+                        <h2>Painting</h2>
+                </div>
+            </div>
+        </div>  
+    </section>
+  
+<!-- Footer -->
+    <section class="footer">
+        <ul>
+            <li>Nicolas Lopera</li>
+        </ul>
+        
+    </section>
+    
+
+    <script type ="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+        function toggle(){
+            var header = document.querySelector("header");
+            header.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

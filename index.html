@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>WARP BOOK</title>
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Header :3 -->
+    <header id="header">
+        <a href="#" class="logo">NL</a>
+        <ul>
+            <li><a href="#home" onclick="toggle()">Home</a></li>
+            <li><a href="#about" onclick="toggle()">Artist Statement</a></li>
+            <li><a href="#computer" onclick="toggle()">Works</a></li>
+            <li><a href="#design" onclick="toggle()">Project Statement</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+
+
+<!-- BANNER :0 -->
+    <section class="banner" id="home">
+        <div class = "content mxw800p">
+            <h2>WARP BOOK</h2>
+            <div class="author">
+                <h4>NICOLAS LOPERA</h4>
+            </div>
+        </div>  
+    </section>
+    
+    
+<!--ARTIST STATEMENT :0 -->
+    <section class="sec abtclr" id="about">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Artist Statement</h3>
+                    <p>I am an inexperienced artist. I do not look to provide purpose when creating and my art does not specifically reflect myself. My process of creating is driven by curiosity, meaning I want to explore a variety of mediums without being limited to any particular subject matter. At my current stage, art is for my own self enjoyment, although sometimes it communicates something about me. I feel incapable compared to my peers, however my feelings of amazement at their abilities are far more intense. My goal is to create work that forces me to learn something new to create it.
+            </div>
+        </div>  
+    </section>
+ 
+    
+<!-- WORKS :0 -->
+    <section class="sec" id="computer">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Works</h3>
+            </div>
+            <div class="skills">
+                <div class="box">
+                    <div class="iconBx">
+                        <a href="project1.html"><img src="images/flower.png"></a>
+                    </div>
+                    <div class="content">
+                    </div>
+                        <h2>Project 1</h2>
+                </div>
+             <div class="box">
+                    <div class="iconBx">
+                        <a href="project2.html"><img src="images/seesaw.png"></a>
+                    </div>
+                    <div class="content">
+                    </div>
+                        <h2>Project 2</h2>
+                </div>
+             <div class="box">
+                    <div class="iconBx">
+                        <img src="images/sketch.png">
+                    </div>
+                    <div class="content">
+                    </div>
+                        <h2>Sketches</h2>
+                </div>
+             <div class="box">
+                    <div class="iconBx">
+                        <img src="images/poetry.png">
+                    </div>
+                    <div class="content">
+                    </div>
+                        <h2>Poetry</h2>
+                </div>
+                <div class="box">
+                    <div class="iconBx">
+                        <a href="painting.html"><img src="images/painting.png"></a>
+                    </div>
+                    <div class="content">
+                    </div>
+                        <h2>Painting</h2>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+<!-- PROJECT STATEMENT :0 -->
+    <section class="sec abtclr" id="design">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Project Statement</h3>
+                <p> <color>Materials:</color> This project was created using <color>HTML5</color>, <color>CSS3</color>, and <color>JavaScript</color></p>
+                <p>Technology has become an integral part of life for the urban population. Advances in technology lead to improvements in every aspect of life including health, travel, and communication. Art is no exception. This untitled piece takes advantage of the power of computers to put a collection of artworks together into a digital space. This <color>"book"</color> exists as a webpage that is created using HTML5 and CSS3. Certain documented works within the book are accompanied by extension pieces that were created using p5.js, a JavaScript library. These extensions serve to show how the interaction between advancing technology and art brings a new world of expression and opportunity, and provides a new perspective as to what “materials” can be used to create art.  
+                </p>
+            </div>
+        </div>  
+    </section>
+  
+<!-- Footer -->
+    <section class="footer">
+        <ul>
+            <li>Nicolas Lopera</li>
+        </ul>
+        
+    </section>
+    
+
+    <script type ="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+        function toggle(){
+            var header = document.querySelector("header");
+            header.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
